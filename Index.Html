@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>dropsDigital - Produtos Digitais com IA</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
@@ -21,16 +21,7 @@
           <p>Aprenda tudo sobre inteligência artificial aplicada a negócios.</p>
           <button class="btn-pix" data-produto="Guia de IA" data-valor="29.90">Comprar por R$29,90 (Pix)</button>
         </li>
-        <li>
-          <h3>Currículo Profissional</h3>
-          <p>Modelo profissional pronto para edição e envio.</p>
-          <button class="btn-pix" data-produto="Currículo Profissional" data-valor="19.90">Comprar por R$19,90 (Pix)</button>
-        </li>
-        <li>
-          <h3>PDF: Dicas para Freelancers</h3>
-          <p>Como conseguir e gerenciar seus clientes online.</p>
-          <button class="btn-pix" data-produto="Dicas para Freelancers" data-valor="14.90">Comprar por R$14,90 (Pix)</button>
-        </li>
+        <!-- ... outros produtos ... -->
       </ul>
     </section>
 
@@ -43,6 +34,21 @@
   <footer>
     <p>© 2025 dropsDigital - Todos os direitos reservados</p>
   </footer>
+
+  <!-- NOVO MODAL (não existia antes) -->
+  <div id="pixModal" class="modal">
+    <div class="modal-content">
+      <span id="closeModal" class="close">&times;</span>
+      <h3 id="modalTitle"></h3>
+      <p>Chave Pix:</p>
+      <p id="modalChave" class="chave-pix"></p>
+      <p>Para receber seu produto, informe seu e-mail:</p>
+      <form id="emailForm">
+        <input type="email" id="emailInput" placeholder="seu@email.com" required>
+        <button type="submit">Receber Produto</button>
+      </form>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
